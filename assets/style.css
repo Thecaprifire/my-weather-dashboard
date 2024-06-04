@@ -1,0 +1,132 @@
+main {
+    display: flex;
+  }
+  
+  h1 {
+    background: linear-gradient(to left, #221565 0%, #4558B6 95%);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    text-indent: 6em;
+  }
+  
+  .search {
+    flex: 1;
+  }
+  
+  .city-result {
+    flex: 3;
+  }
+  
+  .city {
+    border: 1px solid transparent; /* Initially hide the border */
+    padding: 10px;
+  }
+  
+  .city-border {
+    border: 1px solid #ccc; /* Add border when search results are displayed */
+  }
+  
+  .search-btn {
+    background-color: #6991E3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 18px); /* Adjust the width to match the .search-history */
+    height: 30px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #ccc; /* Add a right border */
+  }
+  
+  .search-input {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    width: calc(100% - 20px); /* Adjust the width to match the .search-history */
+  }
+  
+  input {
+    display: block;
+    width: calc(100% - 33px); /* Adjust the width to match the .search-history */
+    padding: 0 1rem;
+    height: 30px;
+  }
+  
+  input,
+  input::placeholder {
+    font: 1rem/3 sans-serif;
+  }
+  
+  #citySearch {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .forecast-day {
+    background-color: #323D4F;
+    color: white;
+    padding: 20px 10px 10px 20px;
+  }
+  
+  .forecast-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-history {
+    background-color: #AEAEAE;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 19px; /* Add margin to create space from the city */
+  }
+  
+  .search-history:hover {
+    background-color: #6991E3;
+  }
+  
+  /* Define styles for screens below 600px */
+  @media (max-width: 600px) {
+    main {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    h1 {
+      padding: 7px 10px; /* Adjust padding for better fit */
+      text-indent: 0; /* Remove text indent */
+    }
+  
+    .search {
+      order: 1; /* Move search box to the top */
+    }
+  
+    .city-result,
+    .forecast {
+      order: 2; /* Place city-result and forecast below search */
+    }
+  
+    .forecast-container {
+      flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    }
+  
+    .forecast-day {
+      width: calc(50% - 5px); /* Each column takes up 50% width with some spacing */
+      margin-right: 10px; /* Add spacing between columns */
+      margin-bottom: 10px; /* Add spacing between rows */
+    }
+  }
+  
