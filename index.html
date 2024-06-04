@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="weatherDashboard">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <main>
+        <div class="search">
+            <h2 id="citySearch">Search for a City:</h2>
+            <div class="search-input">
+                <input type="search-input" class="seacrh-control" placeholder="Type Here" id="search-input">
+            </div>
+    
+            <div class="search-bar">
+                <button type="search-btn" class="search-btn btn" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="city-result">
+            <div class="city">
+                <h2 class="cityName"></h2>
+                <div class="temp"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+            </div>
+
+            <div class="forecast">
+                <h3 class="resultForecast"></h3>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
