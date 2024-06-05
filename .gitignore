@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # Ignore Mac system files
-.DS_store
+.DS_storeconfig.js
